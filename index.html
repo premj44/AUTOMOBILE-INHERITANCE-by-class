@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //AUTOMOBILE INHERITANCE MODEL
+
+    class fourwheeler {
+
+        constructor(e, br) {
+                this.engine = e,
+                this.break = br
+        }
+
+    }
+    let m1 = new fourwheeler("swift", "disc")
+    //    console.log(m1)
+
+    class swift extends fourwheeler {
+        constructor(e,br,t,w,l) {
+             super(e,br)
+                this.tyre = t,
+                this.no_wheels = w,
+                this.lamp_type = l;
+        }
+    }
+
+    let s1 = new swift("4 stroke","disc break","tubeless","4 wheels","LED")
+    console.log(s1)
+
+   // By using constructor 
+
+    class Car{
+        constructor(e,b,t,w,l) {
+                this.engine = e,
+                this.break = b,
+                this.tyre = t,
+                this.no_wheels = w,
+                this.lamp_type = l;
+        }
+
+    }
+    let tata = new Car("4 stroke","disc break","tubeless","4 wheels","LED")
+     console.log(tata)
+</script>
